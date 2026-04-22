@@ -1,0 +1,1271 @@
+{
+  "metadata": {
+    "institution": "Ohio Northern University",
+    "abbreviation": "ONU",
+    "location": "Ada, Ohio",
+    "source": "onu.edu/academics (official)",
+    "last_updated": "2025-04",
+    "notes": "All program types: Major, Minor, Concentration, Pathway, Preprofessional Program, Graduate Program. Colleges restructured in 2023-24; Arts & Sciences now contains three schools.",
+    "colleges": [
+      "College of Arts & Sciences",
+      "James F. Dicke College of Business Administration",
+      "T.J. Smull College of Engineering",
+      "Raabe College of Pharmacy",
+      "Claude W. Pettit College of Law"
+    ]
+  },
+
+  "colleges": {
+
+    "arts_and_sciences": {
+      "id": "arts_and_sciences",
+      "full_name": "College of Arts & Sciences",
+      "schools": [
+        "School of Arts, Humanities and Social Sciences",
+        "School of Health, Life Sciences, and Education",
+        "School of Mathematical and Physical Sciences"
+      ],
+      "programs": [
+
+        {
+          "id": "art_design",
+          "name": "Art & Design",
+          "school": "School of Arts, Humanities and Social Sciences",
+          "types": ["Major", "Minor"],
+          "area_of_interest": ["Arts & Humanities"],
+          "url": "https://www.onu.edu/academics/art-design",
+          "degree": "BA"
+        },
+        {
+          "id": "art_education",
+          "name": "Art Education",
+          "school": "School of Arts, Humanities and Social Sciences",
+          "types": ["Major"],
+          "area_of_interest": ["Arts & Humanities", "Teaching, Education and Leadership"],
+          "url": "https://www.onu.edu/academics/art-education",
+          "degree": "BA"
+        },
+        {
+          "id": "arts_administration",
+          "name": "Arts Administration",
+          "school": "School of Arts, Humanities and Social Sciences",
+          "types": ["Minor"],
+          "area_of_interest": ["Arts & Humanities"],
+          "url": "https://www.onu.edu/academics/arts-administration"
+        },
+        {
+          "id": "communication_media",
+          "name": "Communication & Media",
+          "school": "School of Arts, Humanities and Social Sciences",
+          "types": ["Major", "Minor"],
+          "area_of_interest": ["English, Communications and Writing"],
+          "url": "https://www.onu.edu/academics/communication-media",
+          "degree": "BA"
+        },
+        {
+          "id": "creative_writing",
+          "name": "Creative Writing",
+          "school": "School of Arts, Humanities and Social Sciences",
+          "types": ["Major", "Minor"],
+          "area_of_interest": ["English, Communications and Writing"],
+          "url": "https://www.onu.edu/academics/creative-writing",
+          "degree": "BA"
+        },
+        {
+          "id": "criminal_justice",
+          "name": "Criminal Justice",
+          "school": "School of Arts, Humanities and Social Sciences",
+          "types": ["Major", "Minor"],
+          "area_of_interest": ["Justice and Legal", "Social Sciences"],
+          "url": "https://www.onu.edu/academics/criminal-justice",
+          "degree": "BS"
+        },
+        {
+          "id": "dance",
+          "name": "Dance",
+          "school": "School of Arts, Humanities and Social Sciences",
+          "types": ["Minor"],
+          "area_of_interest": ["Arts & Humanities"],
+          "url": "https://www.onu.edu/academics/dance"
+        },
+        {
+          "id": "digital_communication_content_creation",
+          "name": "Digital Communication & Content Creation",
+          "school": "School of Arts, Humanities and Social Sciences",
+          "types": ["Minor", "Concentration"],
+          "area_of_interest": ["English, Communications and Writing"],
+          "url": "https://www.onu.edu/academics/digital-communication-content-creation"
+        },
+        {
+          "id": "english",
+          "name": "English",
+          "school": "School of Arts, Humanities and Social Sciences",
+          "types": ["Major", "Minor"],
+          "area_of_interest": ["English, Communications and Writing", "Arts & Humanities"],
+          "url": "https://www.onu.edu/academics/english",
+          "degree": "BA"
+        },
+        {
+          "id": "english_education",
+          "name": "English Education",
+          "school": "School of Arts, Humanities and Social Sciences",
+          "types": ["Major"],
+          "area_of_interest": ["English, Communications and Writing", "Teaching, Education and Leadership"],
+          "url": "https://www.onu.edu/academics/english-education",
+          "degree": "BA"
+        },
+        {
+          "id": "entertainment_design_production",
+          "name": "Entertainment Design & Production",
+          "school": "School of Arts, Humanities and Social Sciences",
+          "types": ["Major", "Minor"],
+          "area_of_interest": ["Arts & Humanities"],
+          "url": "https://www.onu.edu/academics/entertainment-design-production",
+          "degree": "BS"
+        },
+        {
+          "id": "ethics",
+          "name": "Ethics",
+          "school": "School of Arts, Humanities and Social Sciences",
+          "types": ["Minor"],
+          "area_of_interest": ["Philosophy and Culture"],
+          "url": "https://www.onu.edu/academics/ethics"
+        },
+        {
+          "id": "gender_and_sexuality",
+          "name": "Gender and Sexuality",
+          "school": "School of Arts, Humanities and Social Sciences",
+          "types": ["Minor"],
+          "area_of_interest": ["Social Sciences", "Arts & Humanities"],
+          "url": "https://www.onu.edu/academics/gender-and-sexuality"
+        },
+        {
+          "id": "history",
+          "name": "History",
+          "school": "School of Arts, Humanities and Social Sciences",
+          "types": ["Major"],
+          "area_of_interest": ["Arts & Humanities", "Social Sciences"],
+          "url": "https://www.onu.edu/academics/history",
+          "degree": "BA"
+        },
+        {
+          "id": "leadership_studies",
+          "name": "Leadership Studies",
+          "school": "School of Arts, Humanities and Social Sciences",
+          "types": ["Minor"],
+          "area_of_interest": ["Teaching, Education and Leadership", "Social Sciences"],
+          "url": "https://www.onu.edu/academics/leadership-studies"
+        },
+        {
+          "id": "music",
+          "name": "Music",
+          "school": "School of Arts, Humanities and Social Sciences",
+          "types": ["Major", "Minor"],
+          "area_of_interest": ["Arts & Humanities"],
+          "url": "https://www.onu.edu/academics/music",
+          "degree": "BM",
+          "concentrations": [
+            "Music Performance",
+            "Music Sound Recording Technology",
+            "Music Individualized Studies"
+          ]
+        },
+        {
+          "id": "music_education",
+          "name": "Music Education",
+          "school": "School of Arts, Humanities and Social Sciences",
+          "types": ["Major"],
+          "area_of_interest": ["Arts & Humanities", "Teaching, Education and Leadership"],
+          "url": "https://www.onu.edu/academics/music-education",
+          "degree": "BM"
+        },
+        {
+          "id": "music_individualized_studies",
+          "name": "Music Individualized Studies",
+          "school": "School of Arts, Humanities and Social Sciences",
+          "types": ["Concentration"],
+          "parent_major": "Music",
+          "area_of_interest": ["Arts & Humanities"],
+          "url": "https://www.onu.edu/academics/music-individualized-studies"
+        },
+        {
+          "id": "music_performance",
+          "name": "Music Performance",
+          "school": "School of Arts, Humanities and Social Sciences",
+          "types": ["Concentration"],
+          "parent_major": "Music",
+          "area_of_interest": ["Arts & Humanities"],
+          "url": "https://www.onu.edu/academics/music-performance"
+        },
+        {
+          "id": "music_sound_recording_technology",
+          "name": "Music Sound Recording Technology",
+          "school": "School of Arts, Humanities and Social Sciences",
+          "types": ["Concentration"],
+          "parent_major": "Music",
+          "area_of_interest": ["Arts & Humanities", "Engineering and Technology"],
+          "url": "https://www.onu.edu/academics/music-sound-recording-technology"
+        },
+        {
+          "id": "musical_theatre",
+          "name": "Musical Theatre",
+          "school": "School of Arts, Humanities and Social Sciences",
+          "types": ["Major"],
+          "area_of_interest": ["Arts & Humanities"],
+          "url": "https://www.onu.edu/academics/musical-theatre",
+          "degree": "BFA"
+        },
+        {
+          "id": "philosophy",
+          "name": "Philosophy",
+          "school": "School of Arts, Humanities and Social Sciences",
+          "types": ["Minor"],
+          "area_of_interest": ["Philosophy and Culture"],
+          "url": "https://www.onu.edu/academics/philosophy"
+        },
+        {
+          "id": "philosophy_politics_economics",
+          "name": "Philosophy, Politics & Economics",
+          "school": "School of Arts, Humanities and Social Sciences",
+          "types": ["Major"],
+          "area_of_interest": ["Philosophy and Culture", "Social Sciences"],
+          "url": "https://www.onu.edu/academics/philosophy-politics-economics",
+          "degree": "BA"
+        },
+        {
+          "id": "political_science",
+          "name": "Political Science",
+          "school": "School of Arts, Humanities and Social Sciences",
+          "types": ["Major", "Minor"],
+          "area_of_interest": ["Social Sciences", "Justice and Legal"],
+          "url": "https://www.onu.edu/academics/political-science",
+          "degree": "BA"
+        },
+        {
+          "id": "public_history_museum_studies",
+          "name": "Public History and Museum Studies",
+          "school": "School of Arts, Humanities and Social Sciences",
+          "types": ["Minor"],
+          "area_of_interest": ["Arts & Humanities"],
+          "url": "https://www.onu.edu/academics/public-history-and-museum-studies"
+        },
+        {
+          "id": "public_policy",
+          "name": "Public Policy",
+          "school": "School of Arts, Humanities and Social Sciences",
+          "types": ["Minor"],
+          "area_of_interest": ["Justice and Legal", "Social Sciences"],
+          "url": "https://www.onu.edu/academics/public-policy"
+        },
+        {
+          "id": "public_relations",
+          "name": "Public Relations",
+          "school": "School of Arts, Humanities and Social Sciences",
+          "types": ["Major", "Minor", "Concentration"],
+          "area_of_interest": ["English, Communications and Writing"],
+          "url": "https://www.onu.edu/academics/public-relations",
+          "degree": "BS"
+        },
+        {
+          "id": "social_media",
+          "name": "Social Media",
+          "school": "School of Arts, Humanities and Social Sciences",
+          "types": ["Minor"],
+          "area_of_interest": ["English, Communications and Writing"],
+          "url": "https://www.onu.edu/academics/social-media"
+        },
+        {
+          "id": "sociology",
+          "name": "Sociology",
+          "school": "School of Arts, Humanities and Social Sciences",
+          "types": ["Minor", "Concentration"],
+          "area_of_interest": ["Social Sciences"],
+          "url": "https://www.onu.edu/academics/sociology"
+        },
+        {
+          "id": "theatre",
+          "name": "Theatre",
+          "school": "School of Arts, Humanities and Social Sciences",
+          "types": ["Major", "Minor"],
+          "area_of_interest": ["Arts & Humanities"],
+          "url": "https://www.onu.edu/academics/theatre",
+          "degree": "BA"
+        },
+
+        {
+          "id": "biochemistry",
+          "name": "Biochemistry",
+          "school": "School of Health, Life Sciences, and Education",
+          "types": ["Major", "Minor"],
+          "area_of_interest": ["Natural and Life Sciences", "Health and Medical"],
+          "url": "https://www.onu.edu/academics/biochemistry",
+          "degree": "BS"
+        },
+        {
+          "id": "biology",
+          "name": "Biology",
+          "school": "School of Health, Life Sciences, and Education",
+          "types": ["Major", "Minor"],
+          "area_of_interest": ["Natural and Life Sciences"],
+          "url": "https://www.onu.edu/academics/biology",
+          "degree": "BS"
+        },
+        {
+          "id": "biology_teacher_licensure",
+          "name": "Biology with Teacher Licensure",
+          "school": "School of Health, Life Sciences, and Education",
+          "types": ["Major"],
+          "area_of_interest": ["Natural and Life Sciences", "Teaching, Education and Leadership"],
+          "url": "https://www.onu.edu/academics/biology-teacher-licensure",
+          "degree": "BS"
+        },
+        {
+          "id": "biomedical_sciences",
+          "name": "Biomedical Sciences",
+          "school": "School of Health, Life Sciences, and Education",
+          "types": ["Minor"],
+          "area_of_interest": ["Health and Medical", "Natural and Life Sciences"],
+          "url": "https://www.onu.edu/academics/biomedical-sciences"
+        },
+        {
+          "id": "brain_and_behavior",
+          "name": "Brain and Behavior",
+          "school": "School of Health, Life Sciences, and Education",
+          "types": ["Concentration"],
+          "parent_major": "Psychology",
+          "area_of_interest": ["Health and Medical", "Natural and Life Sciences"],
+          "url": "https://www.onu.edu/academics/brain-and-behavior"
+        },
+        {
+          "id": "clinical_counseling_psychology",
+          "name": "Clinical and Counseling Psychology",
+          "school": "School of Health, Life Sciences, and Education",
+          "types": ["Concentration"],
+          "parent_major": "Psychology",
+          "area_of_interest": ["Health and Medical", "Social Sciences"],
+          "url": "https://www.onu.edu/academics/clinical-and-counseling-psychology"
+        },
+        {
+          "id": "education_early_middle_childhood",
+          "name": "Education (Early Childhood or Middle Childhood)",
+          "school": "School of Health, Life Sciences, and Education",
+          "types": ["Major"],
+          "area_of_interest": ["Teaching, Education and Leadership"],
+          "url": "https://www.onu.edu/academics/education-early-childhood-or-middle-childhood",
+          "degree": "BS",
+          "pathways": ["Early Childhood Education", "Middle Childhood Education"]
+        },
+        {
+          "id": "environmental_field_biology",
+          "name": "Environmental & Field Biology",
+          "school": "School of Health, Life Sciences, and Education",
+          "types": ["Major"],
+          "area_of_interest": ["Natural and Life Sciences"],
+          "url": "https://www.onu.edu/academics/environmental-field-biology",
+          "degree": "BS"
+        },
+        {
+          "id": "environmental_studies",
+          "name": "Environmental Studies",
+          "school": "School of Health, Life Sciences, and Education",
+          "types": ["Minor"],
+          "area_of_interest": ["Natural and Life Sciences"],
+          "url": "https://www.onu.edu/academics/environmental-studies"
+        },
+        {
+          "id": "exercise_physiology",
+          "name": "Exercise Physiology",
+          "school": "School of Health, Life Sciences, and Education",
+          "types": ["Major", "Minor", "Pathway"],
+          "area_of_interest": ["Health and Medical"],
+          "url": "https://www.onu.edu/academics/exercise-physiology",
+          "degree": "BS"
+        },
+        {
+          "id": "forensic_biology",
+          "name": "Forensic Biology",
+          "school": "School of Health, Life Sciences, and Education",
+          "types": ["Major"],
+          "area_of_interest": ["Natural and Life Sciences", "Justice and Legal"],
+          "url": "https://www.onu.edu/academics/forensic-biology",
+          "degree": "BS"
+        },
+        {
+          "id": "general_psychology",
+          "name": "General Psychology",
+          "school": "School of Health, Life Sciences, and Education",
+          "types": ["Concentration"],
+          "parent_major": "Psychology",
+          "area_of_interest": ["Social Sciences", "Health and Medical"],
+          "url": "https://www.onu.edu/academics/general-psychology"
+        },
+        {
+          "id": "medical_humanities",
+          "name": "Medical Humanities",
+          "school": "School of Health, Life Sciences, and Education",
+          "types": ["Minor"],
+          "area_of_interest": ["Health and Medical", "Arts & Humanities"],
+          "url": "https://www.onu.edu/academics/medical-humanities"
+        },
+        {
+          "id": "medical_laboratory_science",
+          "name": "Medical Laboratory Science",
+          "school": "School of Health, Life Sciences, and Education",
+          "types": ["Major"],
+          "area_of_interest": ["Health and Medical", "Natural and Life Sciences"],
+          "url": "https://www.onu.edu/academics/medical-laboratory-science",
+          "degree": "BS"
+        },
+        {
+          "id": "molecular_biology",
+          "name": "Molecular Biology",
+          "school": "School of Health, Life Sciences, and Education",
+          "types": ["Major"],
+          "area_of_interest": ["Natural and Life Sciences", "Health and Medical"],
+          "url": "https://www.onu.edu/academics/molecular-biology",
+          "degree": "BS"
+        },
+        {
+          "id": "neuroscience",
+          "name": "Neuroscience",
+          "school": "School of Health, Life Sciences, and Education",
+          "types": ["Major"],
+          "area_of_interest": ["Natural and Life Sciences", "Health and Medical"],
+          "url": "https://www.onu.edu/academics/neuroscience",
+          "degree": "BS"
+        },
+        {
+          "id": "nursing",
+          "name": "Nursing",
+          "school": "School of Health, Life Sciences, and Education",
+          "types": ["Major"],
+          "area_of_interest": ["Health and Medical"],
+          "url": "https://www.onu.edu/academics/nursing",
+          "degree": "BSN"
+        },
+        {
+          "id": "psychology",
+          "name": "Psychology",
+          "school": "School of Health, Life Sciences, and Education",
+          "types": ["Major", "Minor", "Concentration"],
+          "area_of_interest": ["Social Sciences", "Health and Medical"],
+          "url": "https://www.onu.edu/academics/psychology",
+          "degree": "BS",
+          "concentrations": [
+            "Brain and Behavior",
+            "Clinical and Counseling Psychology",
+            "General Psychology"
+          ]
+        },
+        {
+          "id": "public_health",
+          "name": "Public Health",
+          "school": "School of Health, Life Sciences, and Education",
+          "types": ["Minor"],
+          "area_of_interest": ["Health and Medical"],
+          "url": "https://www.onu.edu/academics/public-health"
+        },
+        {
+          "id": "social_studies_education",
+          "name": "Social Studies Education",
+          "school": "School of Health, Life Sciences, and Education",
+          "types": ["Major"],
+          "area_of_interest": ["Teaching, Education and Leadership", "Social Sciences"],
+          "url": "https://www.onu.edu/academics/social-studies-education",
+          "degree": "BS"
+        },
+        {
+          "id": "sport_management",
+          "name": "Sport Management",
+          "school": "School of Health, Life Sciences, and Education",
+          "types": ["Major"],
+          "area_of_interest": ["Health and Medical", "Accounting and Business"],
+          "url": "https://www.onu.edu/academics/sport-management",
+          "degree": "BS"
+        },
+        {
+          "id": "strength_conditioning",
+          "name": "Strength & Conditioning",
+          "school": "School of Health, Life Sciences, and Education",
+          "types": ["Major", "Minor"],
+          "area_of_interest": ["Health and Medical"],
+          "url": "https://www.onu.edu/academics/strength-conditioning",
+          "degree": "BS"
+        },
+        {
+          "id": "technology_education",
+          "name": "Technology Education",
+          "school": "School of Health, Life Sciences, and Education",
+          "types": ["Major"],
+          "area_of_interest": ["Teaching, Education and Leadership", "Engineering and Technology"],
+          "url": "https://www.onu.edu/academics/technology-education",
+          "degree": "BS"
+        },
+
+        {
+          "id": "applied_mathematics",
+          "name": "Applied Mathematics",
+          "school": "School of Mathematical and Physical Sciences",
+          "types": ["Minor", "Concentration"],
+          "parent_major": "Mathematics",
+          "area_of_interest": ["Math"],
+          "url": "https://www.onu.edu/academics/applied-mathematics"
+        },
+        {
+          "id": "applied_statistics",
+          "name": "Applied Statistics",
+          "school": "School of Mathematical and Physical Sciences",
+          "types": ["Minor", "Concentration"],
+          "parent_major": "Mathematics",
+          "area_of_interest": ["Math"],
+          "url": "https://www.onu.edu/academics/applied-statistics"
+        },
+        {
+          "id": "chemistry",
+          "name": "Chemistry",
+          "school": "School of Mathematical and Physical Sciences",
+          "types": ["Major", "Minor"],
+          "area_of_interest": ["Natural and Life Sciences"],
+          "url": "https://www.onu.edu/academics/chemistry",
+          "degree": "BS"
+        },
+        {
+          "id": "chemistry_teacher_licensure",
+          "name": "Chemistry with Teacher Licensure",
+          "school": "School of Mathematical and Physical Sciences",
+          "types": ["Major"],
+          "area_of_interest": ["Natural and Life Sciences", "Teaching, Education and Leadership"],
+          "url": "https://www.onu.edu/academics/chemistry-teacher-licensure",
+          "degree": "BS"
+        },
+        {
+          "id": "data_analytics",
+          "name": "Data Analytics",
+          "school": "School of Mathematical and Physical Sciences",
+          "types": ["Minor"],
+          "area_of_interest": ["Math", "Engineering and Technology"],
+          "url": "https://www.onu.edu/academics/data-analytics"
+        },
+        {
+          "id": "mathematics",
+          "name": "Mathematics",
+          "school": "School of Mathematical and Physical Sciences",
+          "types": ["Major", "Minor", "Concentration"],
+          "area_of_interest": ["Math"],
+          "url": "https://www.onu.edu/academics/mathematics",
+          "degree": "BS",
+          "concentrations": [
+            "Applied Mathematics",
+            "Applied Statistics",
+            "Advanced Mathematical Studies",
+            "Mathematics with Teacher Licensure",
+            "Actuarial Science"
+          ]
+        },
+        {
+          "id": "mathematics_teacher_licensure",
+          "name": "Mathematics with Teacher Licensure",
+          "school": "School of Mathematical and Physical Sciences",
+          "types": ["Concentration"],
+          "parent_major": "Mathematics",
+          "area_of_interest": ["Math", "Teaching, Education and Leadership"],
+          "url": "https://www.onu.edu/academics/mathematics-teacher-licensure"
+        },
+        {
+          "id": "actuarial_science",
+          "name": "Actuarial Science",
+          "school": "School of Mathematical and Physical Sciences",
+          "types": ["Concentration"],
+          "parent_major": "Mathematics",
+          "area_of_interest": ["Math", "Accounting and Business"],
+          "url": "https://www.onu.edu/academics/actuarial-science"
+        },
+        {
+          "id": "advanced_mathematical_studies",
+          "name": "Advanced Mathematical Studies",
+          "school": "School of Mathematical and Physical Sciences",
+          "types": ["Concentration"],
+          "parent_major": "Mathematics",
+          "area_of_interest": ["Math"],
+          "url": "https://www.onu.edu/academics/advanced-mathematical-studies"
+        },
+        {
+          "id": "statistics",
+          "name": "Statistics",
+          "school": "School of Mathematical and Physical Sciences",
+          "types": ["Major"],
+          "area_of_interest": ["Math"],
+          "url": "https://www.onu.edu/academics/statistics",
+          "degree": "BS"
+        },
+
+        {
+          "id": "pre_medicine",
+          "name": "Pre Medicine",
+          "school": "School of Health, Life Sciences, and Education",
+          "types": ["Preprofessional Program"],
+          "area_of_interest": ["Health and Medical"],
+          "url": "https://www.onu.edu/academics/pre-medicine"
+        },
+        {
+          "id": "pre_athletic_training",
+          "name": "Pre-Athletic Training",
+          "school": "School of Health, Life Sciences, and Education",
+          "types": ["Preprofessional Program"],
+          "area_of_interest": ["Health and Medical"],
+          "url": "https://www.onu.edu/academics/pre-athletic-training"
+        },
+        {
+          "id": "pre_dentistry",
+          "name": "Pre-Dentistry",
+          "school": "School of Health, Life Sciences, and Education",
+          "types": ["Preprofessional Program"],
+          "area_of_interest": ["Health and Medical"],
+          "url": "https://www.onu.edu/academics/pre-dentistry"
+        },
+        {
+          "id": "pre_occupational_therapy",
+          "name": "Pre-Occupational Therapy",
+          "school": "School of Health, Life Sciences, and Education",
+          "types": ["Preprofessional Program"],
+          "area_of_interest": ["Health and Medical"],
+          "url": "https://www.onu.edu/academics/pre-occupational-therapy"
+        },
+        {
+          "id": "pre_optometry",
+          "name": "Pre-Optometry",
+          "school": "School of Health, Life Sciences, and Education",
+          "types": ["Preprofessional Program"],
+          "area_of_interest": ["Health and Medical"],
+          "url": "https://www.onu.edu/academics/pre-optometry"
+        },
+        {
+          "id": "pre_physical_therapy",
+          "name": "Pre-Physical Therapy",
+          "school": "School of Health, Life Sciences, and Education",
+          "types": ["Preprofessional Program"],
+          "area_of_interest": ["Health and Medical"],
+          "url": "https://www.onu.edu/academics/pre-physical-therapy"
+        },
+        {
+          "id": "pre_physician_assistant",
+          "name": "Pre-Physician Assistant",
+          "school": "School of Health, Life Sciences, and Education",
+          "types": ["Preprofessional Program"],
+          "area_of_interest": ["Health and Medical"],
+          "url": "https://www.onu.edu/academics/pre-physician-assistant"
+        },
+        {
+          "id": "pre_veterinary",
+          "name": "Pre-Veterinary",
+          "school": "School of Health, Life Sciences, and Education",
+          "types": ["Preprofessional Program"],
+          "area_of_interest": ["Health and Medical", "Natural and Life Sciences"],
+          "url": "https://www.onu.edu/academics/pre-veterinary"
+        },
+
+        {
+          "id": "honors_program",
+          "name": "Honors Program",
+          "school": null,
+          "types": ["Concentration"],
+          "area_of_interest": [],
+          "url": "https://www.onu.edu/academics/honors-program",
+          "notes": "Available to students across all colleges"
+        },
+        {
+          "id": "rotc_air_force",
+          "name": "ROTC – Air Force",
+          "school": null,
+          "types": ["Pathway"],
+          "area_of_interest": ["Teaching, Education and Leadership"],
+          "url": "https://www.onu.edu/academics/rotc-air-force"
+        }
+      ]
+    },
+
+    "business": {
+      "id": "business",
+      "full_name": "James F. Dicke College of Business Administration",
+      "accreditation": "AACSB International",
+      "programs": [
+        {
+          "id": "accounting",
+          "name": "Accounting",
+          "types": ["Major", "Concentration"],
+          "area_of_interest": ["Accounting and Business"],
+          "url": "https://www.onu.edu/academics/accounting",
+          "degree": "BSBA",
+          "concentrations": ["Accounting: Express Path (4+1 MSA)"],
+          "notes": "5th-year MSA option available"
+        },
+        {
+          "id": "accounting_msa",
+          "name": "Accounting: MSA",
+          "types": ["Graduate Program"],
+          "area_of_interest": ["Accounting and Business"],
+          "url": "https://www.onu.edu/academics/accounting-msa",
+          "degree": "MSA",
+          "notes": "Master of Science in Accounting; can be completed in 5 years via Express Path"
+        },
+        {
+          "id": "business_administration_minor",
+          "name": "Business Administration",
+          "types": ["Minor"],
+          "area_of_interest": ["Accounting and Business"],
+          "url": "https://www.onu.edu/academics/business-administration"
+        },
+        {
+          "id": "business_analytics",
+          "name": "Business Analytics",
+          "types": ["Minor", "Concentration"],
+          "area_of_interest": ["Accounting and Business", "Math"],
+          "url": "https://www.onu.edu/academics/business-analytics"
+        },
+        {
+          "id": "entrepreneurship",
+          "name": "Entrepreneurship",
+          "types": ["Minor"],
+          "area_of_interest": ["Accounting and Business"],
+          "url": "https://www.onu.edu/academics/entrepreneurship"
+        },
+        {
+          "id": "finance",
+          "name": "Finance",
+          "types": ["Major", "Minor"],
+          "area_of_interest": ["Accounting and Business"],
+          "url": "https://www.onu.edu/academics/finance",
+          "degree": "BSBA"
+        },
+        {
+          "id": "management",
+          "name": "Management",
+          "types": ["Major", "Minor", "Concentration"],
+          "area_of_interest": ["Accounting and Business"],
+          "url": "https://www.onu.edu/academics/management",
+          "degree": "BSBA",
+          "concentrations": [
+            "Manufacturing Management",
+            "Sport Management (cross-listed)"
+          ]
+        },
+        {
+          "id": "manufacturing_management",
+          "name": "Manufacturing Management",
+          "types": ["Concentration"],
+          "parent_major": "Management",
+          "area_of_interest": ["Accounting and Business", "Engineering and Technology"],
+          "url": "https://www.onu.edu/academics/manufacturing-management"
+        },
+        {
+          "id": "marketing",
+          "name": "Marketing",
+          "types": ["Major", "Minor", "Concentration"],
+          "area_of_interest": ["Accounting and Business"],
+          "url": "https://www.onu.edu/academics/marketing",
+          "degree": "BSBA"
+        },
+        {
+          "id": "pharmaceutical_healthcare_business",
+          "name": "Pharmaceutical and Healthcare Business",
+          "types": ["Major"],
+          "area_of_interest": ["Accounting and Business", "Health and Medical"],
+          "url": "https://www.onu.edu/academics/pharmaceutical-and-healthcare-business",
+          "degree": "BSBA"
+        },
+        {
+          "id": "international_business_minor",
+          "name": "International Business",
+          "types": ["Minor"],
+          "area_of_interest": ["Accounting and Business"],
+          "url": "https://www.onu.edu/college-business",
+          "notes": "Minor offered within College of Business"
+        }
+      ]
+    },
+
+    "engineering": {
+      "id": "engineering",
+      "full_name": "T.J. Smull College of Engineering",
+      "notes": "Optional 5-year co-op program available for all engineering majors",
+      "programs": [
+        {
+          "id": "civil_engineering",
+          "name": "Civil Engineering",
+          "types": ["Major"],
+          "area_of_interest": ["Engineering and Technology"],
+          "url": "https://www.onu.edu/academics/civil-engineering",
+          "degree": "BSCE",
+          "concentrations": ["Environmental Engineering", "Sustainable Engineering"]
+        },
+        {
+          "id": "computer_engineering",
+          "name": "Computer Engineering",
+          "types": ["Major"],
+          "area_of_interest": ["Engineering and Technology"],
+          "url": "https://www.onu.edu/academics/computer-engineering",
+          "degree": "BSCpE"
+        },
+        {
+          "id": "computer_science",
+          "name": "Computer Science",
+          "types": ["Major", "Minor"],
+          "area_of_interest": ["Engineering and Technology"],
+          "url": "https://www.onu.edu/academics/computer-science",
+          "degree": "BS",
+          "concentrations": [
+            "Artificial Intelligence",
+            "Cybersecurity",
+            "Applied Robotics"
+          ]
+        },
+        {
+          "id": "computer_science_x",
+          "name": "Computer Science + X (CS+X)",
+          "types": ["Major"],
+          "area_of_interest": ["Engineering and Technology"],
+          "url": "https://www.onu.edu/academics/computer-science-x-csx",
+          "degree": "BS",
+          "notes": "Flexible dual-focus degree pairing CS with another discipline of the student's choice"
+        },
+        {
+          "id": "construction_management",
+          "name": "Construction Management",
+          "types": ["Major"],
+          "area_of_interest": ["Engineering and Technology", "Accounting and Business"],
+          "url": "https://www.onu.edu/academics/construction-management",
+          "degree": "BS"
+        },
+        {
+          "id": "electrical_engineering",
+          "name": "Electrical Engineering",
+          "types": ["Major"],
+          "area_of_interest": ["Engineering and Technology"],
+          "url": "https://www.onu.edu/academics/electrical-engineering",
+          "degree": "BSEE",
+          "concentrations": ["Advanced Energy", "Applied Robotics"]
+        },
+        {
+          "id": "engineering_education",
+          "name": "Engineering Education",
+          "types": ["Major"],
+          "area_of_interest": ["Engineering and Technology", "Teaching, Education and Leadership"],
+          "url": "https://www.onu.edu/academics/engineering-education",
+          "degree": "BS"
+        },
+        {
+          "id": "engineering_exploratory",
+          "name": "Engineering Exploratory",
+          "types": ["Pathway"],
+          "area_of_interest": ["Engineering and Technology"],
+          "url": "https://www.onu.edu/academics/engineering-exploratory",
+          "notes": "For students deciding among engineering disciplines in their first year"
+        },
+        {
+          "id": "manufacturing_technology",
+          "name": "Manufacturing Technology",
+          "types": ["Major"],
+          "area_of_interest": ["Engineering and Technology"],
+          "url": "https://www.onu.edu/academics/manufacturing-technology",
+          "degree": "BS"
+        },
+        {
+          "id": "mechanical_engineering",
+          "name": "Mechanical Engineering",
+          "types": ["Major"],
+          "area_of_interest": ["Engineering and Technology"],
+          "url": "https://www.onu.edu/academics/mechanical-engineering",
+          "degree": "BSME",
+          "concentrations": [
+            "Aerospace Engineering",
+            "Automotive Engineering",
+            "Biomedical Engineering",
+            "Manufacturing Concentration",
+            "Sustainable Engineering"
+          ]
+        },
+        {
+          "id": "technology_systems_minor",
+          "name": "Technology Systems",
+          "types": ["Minor"],
+          "area_of_interest": ["Engineering and Technology"],
+          "url": "https://www.onu.edu/academics/technology-systems"
+        },
+        {
+          "id": "aerospace_engineering",
+          "name": "Aerospace Engineering",
+          "types": ["Concentration"],
+          "parent_major": "Mechanical Engineering",
+          "area_of_interest": ["Engineering and Technology"],
+          "url": "https://www.onu.edu/academics/aerospace-engineering"
+        },
+        {
+          "id": "advanced_energy",
+          "name": "Advanced Energy",
+          "types": ["Concentration"],
+          "parent_major": "Electrical Engineering",
+          "area_of_interest": ["Engineering and Technology"],
+          "url": "https://www.onu.edu/academics/advanced-energy"
+        },
+        {
+          "id": "applied_robotics",
+          "name": "Applied Robotics",
+          "types": ["Concentration"],
+          "parent_major": "Computer Science / Electrical Engineering",
+          "area_of_interest": ["Engineering and Technology"],
+          "url": "https://www.onu.edu/academics/applied-robotics"
+        },
+        {
+          "id": "artificial_intelligence",
+          "name": "Artificial Intelligence",
+          "types": ["Concentration"],
+          "parent_major": "Computer Science",
+          "area_of_interest": ["Engineering and Technology"],
+          "url": "https://www.onu.edu/academics/artificial-intelligence"
+        },
+        {
+          "id": "automotive_engineering",
+          "name": "Automotive Engineering",
+          "types": ["Concentration"],
+          "parent_major": "Mechanical Engineering",
+          "area_of_interest": ["Engineering and Technology"],
+          "url": "https://www.onu.edu/academics/automotive-engineering"
+        },
+        {
+          "id": "biomedical_engineering",
+          "name": "Biomedical Engineering",
+          "types": ["Concentration"],
+          "parent_major": "Mechanical Engineering",
+          "area_of_interest": ["Engineering and Technology", "Health and Medical"],
+          "url": "https://www.onu.edu/academics/biomedical-engineering"
+        },
+        {
+          "id": "cybersecurity",
+          "name": "Cybersecurity",
+          "types": ["Concentration"],
+          "parent_major": "Computer Science",
+          "area_of_interest": ["Engineering and Technology", "Justice and Legal"],
+          "url": "https://www.onu.edu/academics/cybersecurity"
+        },
+        {
+          "id": "environmental_engineering",
+          "name": "Environmental Engineering",
+          "types": ["Concentration"],
+          "parent_major": "Civil Engineering",
+          "area_of_interest": ["Engineering and Technology", "Natural and Life Sciences"],
+          "url": "https://www.onu.edu/academics/environmental-engineering"
+        },
+        {
+          "id": "manufacturing_concentration",
+          "name": "Manufacturing Concentration",
+          "types": ["Concentration"],
+          "parent_major": "Mechanical Engineering",
+          "area_of_interest": ["Engineering and Technology"],
+          "url": "https://www.onu.edu/academics/manufacturing-concentration"
+        },
+        {
+          "id": "robotics",
+          "name": "Robotics",
+          "types": ["Concentration"],
+          "parent_major": "Computer Science / Computer Engineering",
+          "area_of_interest": ["Engineering and Technology"],
+          "url": "https://www.onu.edu/academics/robotics"
+        },
+        {
+          "id": "sustainable_engineering",
+          "name": "Sustainable Engineering",
+          "types": ["Concentration"],
+          "parent_major": "Civil Engineering / Mechanical Engineering",
+          "area_of_interest": ["Engineering and Technology", "Natural and Life Sciences"],
+          "url": "https://www.onu.edu/academics/sustainable-engineering"
+        }
+      ]
+    },
+
+    "pharmacy": {
+      "id": "pharmacy",
+      "full_name": "Raabe College of Pharmacy",
+      "programs": [
+        {
+          "id": "pharmacy",
+          "name": "Pharmacy",
+          "types": ["Major", "Graduate Program"],
+          "area_of_interest": ["Health and Medical"],
+          "url": "https://www.onu.edu/academics/pharmacy",
+          "degree": "PharmD",
+          "notes": "6-year professional doctorate program"
+        },
+        {
+          "id": "pharmaceutical_biomedical_sciences",
+          "name": "Pharmaceutical & Biomedical Sciences",
+          "types": ["Major"],
+          "area_of_interest": ["Health and Medical", "Natural and Life Sciences"],
+          "url": "https://www.onu.edu/academics/pharmaceutical-biomedical-sciences",
+          "degree": "BS"
+        }
+      ]
+    },
+
+    "law": {
+      "id": "law",
+      "full_name": "Claude W. Pettit College of Law",
+      "programs": [
+        {
+          "id": "law_jd",
+          "name": "LAW – JD",
+          "types": ["Graduate Program"],
+          "area_of_interest": ["Justice and Legal"],
+          "url": "https://www.onu.edu/academics/law-jd",
+          "degree": "JD",
+          "notes": "Juris Doctor; ABA-accredited law school"
+        },
+        {
+          "id": "law_pre_law_33",
+          "name": "Law – Pre-Law / 3+3",
+          "types": ["Major", "Minor", "Preprofessional Program"],
+          "area_of_interest": ["Justice and Legal"],
+          "url": "https://www.onu.edu/academics/law-pre-law33",
+          "notes": "Accelerated 3+3 program: 3 years undergrad + 3 years law school. Available combined with: Business, Chemistry, Criminal Justice, History, Literature, Political Science, Politics, Psychology, Theatre, and more"
+        }
+      ],
+      "combined_degree_33_law_tracks": [
+        "Business",
+        "Chemistry",
+        "Criminal Justice",
+        "History",
+        "Literature",
+        "Political Science",
+        "Politics",
+        "Psychology",
+        "Theatre",
+        "Sociology",
+        "English",
+        "Philosophy, Politics & Economics"
+      ]
+    }
+  },
+
+  "quick_lookup": {
+    "all_majors": [
+      "Accounting",
+      "Art & Design",
+      "Art Education",
+      "Biochemistry",
+      "Biology",
+      "Biology with Teacher Licensure",
+      "Chemistry",
+      "Chemistry with Teacher Licensure",
+      "Civil Engineering",
+      "Communication & Media",
+      "Computer Engineering",
+      "Computer Science",
+      "Computer Science + X (CS+X)",
+      "Construction Management",
+      "Creative Writing",
+      "Criminal Justice",
+      "Education (Early Childhood or Middle Childhood)",
+      "Electrical Engineering",
+      "Engineering Education",
+      "English",
+      "English Education",
+      "Entertainment Design & Production",
+      "Environmental & Field Biology",
+      "Exercise Physiology",
+      "Finance",
+      "Forensic Biology",
+      "History",
+      "Law – Pre-Law / 3+3",
+      "Management",
+      "Manufacturing Technology",
+      "Marketing",
+      "Mathematics",
+      "Mechanical Engineering",
+      "Medical Laboratory Science",
+      "Molecular Biology",
+      "Music",
+      "Music Education",
+      "Musical Theatre",
+      "Neuroscience",
+      "Nursing",
+      "Pharmaceutical & Biomedical Sciences",
+      "Pharmaceutical and Healthcare Business",
+      "Pharmacy (PharmD)",
+      "Philosophy, Politics & Economics",
+      "Political Science",
+      "Psychology",
+      "Public Relations",
+      "Social Studies Education",
+      "Sport Management",
+      "Statistics",
+      "Strength & Conditioning",
+      "Technology Education",
+      "Theatre"
+    ],
+    "all_minors": [
+      "Applied Mathematics",
+      "Applied Statistics",
+      "Art & Design",
+      "Arts Administration",
+      "Biochemistry",
+      "Biology",
+      "Biomedical Sciences",
+      "Business Administration",
+      "Business Analytics",
+      "Chemistry",
+      "Communication & Media",
+      "Computer Science",
+      "Creative Writing",
+      "Criminal Justice",
+      "Dance",
+      "Data Analytics",
+      "Digital Communication & Content Creation",
+      "English",
+      "Entertainment Design & Production",
+      "Entrepreneurship",
+      "Environmental Studies",
+      "Ethics",
+      "Exercise Physiology",
+      "Finance",
+      "Gender and Sexuality",
+      "International Business",
+      "Law – Pre-Law",
+      "Leadership Studies",
+      "Management",
+      "Marketing",
+      "Mathematics",
+      "Medical Humanities",
+      "Music",
+      "Philosophy",
+      "Political Science",
+      "Public Health",
+      "Public History and Museum Studies",
+      "Public Policy",
+      "Public Relations",
+      "Social Media",
+      "Sociology",
+      "Strength & Conditioning",
+      "Technology Systems",
+      "Theatre"
+    ],
+    "all_concentrations": [
+      "Accounting (within Accounting major)",
+      "Actuarial Science (within Mathematics)",
+      "Advanced Energy (within Electrical Engineering)",
+      "Advanced Mathematical Studies (within Mathematics)",
+      "Aerospace Engineering (within Mechanical Engineering)",
+      "Applied Mathematics (within Mathematics)",
+      "Applied Robotics (within CS / EE)",
+      "Applied Statistics (within Mathematics)",
+      "Artificial Intelligence (within Computer Science)",
+      "Automotive Engineering (within Mechanical Engineering)",
+      "Biomedical Engineering (within Mechanical Engineering)",
+      "Brain and Behavior (within Psychology)",
+      "Business Analytics",
+      "Clinical and Counseling Psychology (within Psychology)",
+      "Cybersecurity (within Computer Science)",
+      "Digital Communication & Content Creation",
+      "Environmental Engineering (within Civil Engineering)",
+      "General Psychology (within Psychology)",
+      "Honors Program",
+      "Management",
+      "Manufacturing Concentration (within Mechanical Engineering)",
+      "Manufacturing Management (within Management)",
+      "Marketing",
+      "Mathematics",
+      "Mathematics with Teacher Licensure (within Mathematics)",
+      "Music Individualized Studies (within Music)",
+      "Music Performance (within Music)",
+      "Music Sound Recording Technology (within Music)",
+      "Public Relations",
+      "Robotics (within CS / CpE)",
+      "Sociology",
+      "Sustainable Engineering (within Civil / Mechanical Engineering)"
+    ],
+    "all_pathways": [
+      "Engineering Exploratory",
+      "Exercise Physiology Pathway",
+      "ROTC – Air Force"
+    ],
+    "all_preprofessional_programs": [
+      "Pre Medicine",
+      "Pre-Athletic Training",
+      "Pre-Dentistry",
+      "Pre-Occupational Therapy",
+      "Pre-Optometry",
+      "Pre-Physical Therapy",
+      "Pre-Physician Assistant",
+      "Pre-Veterinary",
+      "Law – Pre-Law / 3+3"
+    ],
+    "all_graduate_programs": [
+      "Accounting: MSA (Master of Science in Accounting)",
+      "LAW – JD (Juris Doctor)",
+      "Pharmacy (PharmD)"
+    ]
+  },
+
+  "areas_of_interest_index": {
+    "Accounting and Business": [
+      "accounting", "accounting_msa", "business_administration_minor", "business_analytics",
+      "entrepreneurship", "finance", "management", "manufacturing_management", "marketing",
+      "pharmaceutical_healthcare_business", "international_business_minor",
+      "actuarial_science", "sport_management", "construction_management"
+    ],
+    "Arts & Humanities": [
+      "art_design", "art_education", "arts_administration", "dance", "english",
+      "entertainment_design_production", "ethics", "gender_and_sexuality", "history",
+      "medical_humanities", "music", "music_education", "musical_theatre", "philosophy",
+      "philosophy_politics_economics", "public_history_museum_studies", "theatre"
+    ],
+    "Engineering and Technology": [
+      "advanced_energy", "applied_robotics", "artificial_intelligence", "aerospace_engineering",
+      "automotive_engineering", "biomedical_engineering", "civil_engineering", "computer_engineering",
+      "computer_science", "computer_science_x", "construction_management", "cybersecurity",
+      "data_analytics", "electrical_engineering", "engineering_education", "engineering_exploratory",
+      "environmental_engineering", "manufacturing_concentration", "manufacturing_technology",
+      "mechanical_engineering", "music_sound_recording_technology", "robotics",
+      "sustainable_engineering", "technology_education", "technology_systems_minor"
+    ],
+    "Health and Medical": [
+      "biochemistry", "biomedical_engineering", "biomedical_sciences", "brain_and_behavior",
+      "clinical_counseling_psychology", "exercise_physiology", "medical_humanities",
+      "medical_laboratory_science", "molecular_biology", "neuroscience", "nursing",
+      "pharmaceutical_biomedical_sciences", "pharmaceutical_healthcare_business", "pharmacy",
+      "pre_athletic_training", "pre_dentistry", "pre_medicine", "pre_occupational_therapy",
+      "pre_optometry", "pre_physical_therapy", "pre_physician_assistant", "pre_veterinary",
+      "public_health", "sport_management", "strength_conditioning"
+    ],
+    "Justice and Legal": [
+      "criminal_justice", "cybersecurity", "forensic_biology", "law_jd", "law_pre_law_33",
+      "philosophy_politics_economics", "political_science", "public_policy"
+    ],
+    "Math": [
+      "actuarial_science", "advanced_mathematical_studies", "applied_mathematics",
+      "applied_statistics", "business_analytics", "data_analytics", "mathematics",
+      "mathematics_teacher_licensure", "statistics"
+    ],
+    "Natural and Life Sciences": [
+      "biochemistry", "biology", "biology_teacher_licensure", "chemistry",
+      "chemistry_teacher_licensure", "environmental_field_biology", "environmental_studies",
+      "forensic_biology", "molecular_biology", "neuroscience", "pharmaceutical_biomedical_sciences",
+      "pre_veterinary", "sustainable_engineering"
+    ],
+    "English, Communications and Writing": [
+      "communication_media", "creative_writing", "digital_communication_content_creation",
+      "english", "english_education", "public_relations", "social_media"
+    ],
+    "Philosophy and Culture": [
+      "ethics", "philosophy", "philosophy_politics_economics"
+    ],
+    "Social Sciences": [
+      "criminal_justice", "gender_and_sexuality", "history", "philosophy_politics_economics",
+      "political_science", "public_policy", "psychology", "social_studies_education", "sociology"
+    ],
+    "Teaching, Education and Leadership": [
+      "art_education", "biology_teacher_licensure", "chemistry_teacher_licensure",
+      "education_early_middle_childhood", "engineering_education", "english_education",
+      "leadership_studies", "mathematics_teacher_licensure", "music_education",
+      "rotc_air_force", "social_studies_education", "technology_education"
+    ]
+  }
+}
