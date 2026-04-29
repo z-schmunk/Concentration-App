@@ -5,12 +5,8 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
-import androidx.compose.foundation.rememberScrollState
-import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
-import androidx.compose.material.icons.automirrored.filled.Chat
-import androidx.compose.material.icons.filled.AutoAwesome
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -19,12 +15,9 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.concentrate.data.College
 import com.example.concentrate.data.DatabaseProvider
 import com.example.concentrate.data.Program
-import com.example.concentrate.data.QuizAiState
-import com.example.concentrate.data.QuizViewModel
 
 enum class QuizStep {
     Intro,
@@ -33,14 +26,12 @@ enum class QuizStep {
     MajorResults,
     ExploreChoice,
     MinorResults,
-    ConcentrationResults,
-    AiRecommendation
+    ConcentrationResults
 }
 
 enum class ExplorationChoice {
     Minor,
     Concentration,
-    AiAdvice,
     Done
 }
 
@@ -51,10 +42,9 @@ data class PersonalityQuestion(
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun QuizScreen(onNavigateToChat: (String) -> Unit) {
+fun QuizScreen() {
     val context = LocalContext.current
     val database = remember { DatabaseProvider.getDatabase(context) }
-    val quizViewModel: QuizViewModel = viewModel()
     
     var currentStep by remember { mutableStateOf(QuizStep.Intro) }
     var selectedCollege by remember { mutableStateOf<College?>(null) }
@@ -71,7 +61,15 @@ fun QuizScreen(onNavigateToChat: (String) -> Unit) {
             PersonalityQuestion("Do you find yourself interested in law, government, or social justice issues?", listOf("Justice and Legal", "Social Sciences")),
             PersonalityQuestion("Do you enjoy teaching others or taking on leadership roles?", listOf("Teaching, Education and Leadership")),
             PersonalityQuestion("Are you curious about the natural world, biology, or chemistry?", listOf("Natural and Life Sciences")),
-            PersonalityQuestion("Do you enjoy writing, storytelling, or media production?", listOf("English, Communications and Writing"))
+            PersonalityQuestion("Do you enjoy writing, storytelling, or media production?", listOf("English, Communications and Writing")),
+            PersonalityQuestion("Do you enjoy learning about different cultures, languages, or history?", listOf("Arts & Humanities", "Social Sciences")),
+            PersonalityQuestion("Are you interested in how businesses operate, marketing, or entrepreneurship?", listOf("Accounting and Business")),
+            PersonalityQuestion("Do you like working with your hands to create or repair things?", listOf("Engineering and Technology")),
+            PersonalityQuestion("Are you interested in psychology, human behavior, or social work?", listOf("Social Sciences")),
+            PersonalityQuestion("Do you enjoy being outdoors and learning about the environment or agriculture?", listOf("Natural and Life Sciences")),
+            PersonalityQuestion("Are you interested in how technology impacts society and ethics?", listOf("Social Sciences", "Engineering and Technology")),
+            PersonalityQuestion("Do you enjoy analyzing economic trends or global markets?", listOf("Accounting and Business")),
+            PersonalityQuestion("Are you interested in medical research or laboratory work?", listOf("Natural and Life Sciences", "Health and Medical"))
         )
     }
 
@@ -90,7 +88,6 @@ fun QuizScreen(onNavigateToChat: (String) -> Unit) {
             QuizStep.ExploreChoice -> { currentStep = QuizStep.MajorResults }
             QuizStep.MinorResults -> { currentStep = QuizStep.ExploreChoice }
             QuizStep.ConcentrationResults -> { currentStep = QuizStep.ExploreChoice }
-            QuizStep.AiRecommendation -> { currentStep = QuizStep.ExploreChoice }
         }
     }
 
@@ -105,7 +102,6 @@ fun QuizScreen(onNavigateToChat: (String) -> Unit) {
                                 QuizStep.ExploreChoice -> "Explore Further"
                                 QuizStep.MinorResults -> "Recommended Minors"
                                 QuizStep.ConcentrationResults -> "Concentrations"
-                                QuizStep.AiRecommendation -> "AI Advisor"
                                 else -> "Major Finder Quiz"
                             }
                         )
@@ -160,8 +156,7 @@ fun QuizScreen(onNavigateToChat: (String) -> Unit) {
                         onMajorSelected = {
                             selectedMajor = it
                             currentStep = QuizStep.ExploreChoice
-                        },
-                        onChatAboutMajor = onNavigateToChat
+                        }
                     )
                     QuizStep.ExploreChoice -> ExploreChoiceView(
                         major = selectedMajor!!,
@@ -169,83 +164,20 @@ fun QuizScreen(onNavigateToChat: (String) -> Unit) {
                             when (choice) {
                                 ExplorationChoice.Minor -> currentStep = QuizStep.MinorResults
                                 ExplorationChoice.Concentration -> currentStep = QuizStep.ConcentrationResults
-                                ExplorationChoice.AiAdvice -> {
-                                    quizViewModel.getAiRecommendation(context, selectedCollege!!, selectedInterests)
-                                    currentStep = QuizStep.AiRecommendation
-                                }
                                 ExplorationChoice.Done -> currentStep = QuizStep.Intro
                             }
                         }
                     )
                     QuizStep.MinorResults -> MinorResultsView(
                         college = selectedCollege!!,
-                        interests = selectedInterests,
-                        onChatAboutMinor = onNavigateToChat
+                        interests = selectedInterests
                     )
                     QuizStep.ConcentrationResults -> ConcentrationResultsView(
                         major = selectedMajor!!,
-                        college = selectedCollege!!,
-                        onChatAboutConcentration = onNavigateToChat
-                    )
-                    QuizStep.AiRecommendation -> AiRecommendationView(quizViewModel)
-                }
-            }
-        }
-    }
-}
-
-@Composable
-fun AiRecommendationView(viewModel: QuizViewModel) {
-    val uiState by viewModel.aiState.collectAsState()
-
-    Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .padding(24.dp)
-            .verticalScroll(rememberScrollState()),
-        horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.Center
-    ) {
-        when (val state = uiState) {
-            is QuizAiState.Loading -> {
-                CircularProgressIndicator()
-                Spacer(modifier = Modifier.height(16.dp))
-                Text("Analyzing your interests with AI...")
-            }
-            is QuizAiState.Success -> {
-                Icon(
-                    Icons.Default.AutoAwesome,
-                    contentDescription = null,
-                    tint = MaterialTheme.colorScheme.primary,
-                    modifier = Modifier.size(48.dp)
-                )
-                Spacer(modifier = Modifier.height(16.dp))
-                Text(
-                    text = "AI Advisor Recommendations",
-                    style = MaterialTheme.typography.headlineSmall,
-                    fontWeight = FontWeight.Bold,
-                    color = MaterialTheme.colorScheme.primary
-                )
-                Spacer(modifier = Modifier.height(16.dp))
-                Card(
-                    colors = CardDefaults.cardColors(
-                        containerColor = MaterialTheme.colorScheme.surfaceVariant
-                    )
-                ) {
-                    Text(
-                        text = state.recommendation,
-                        modifier = Modifier.padding(16.dp),
-                        style = MaterialTheme.typography.bodyLarge
+                        college = selectedCollege!!
                     )
                 }
             }
-            is QuizAiState.Error -> {
-                Text("Error: ${state.message}", color = MaterialTheme.colorScheme.error)
-                Button(onClick = { viewModel.reset() }) {
-                    Text("Try Again")
-                }
-            }
-            else -> {}
         }
     }
 }
@@ -345,8 +277,7 @@ fun PersonalityQuestionView(question: PersonalityQuestion, onAnswer: (Boolean) -
 fun MajorResultsView(
     college: College,
     interests: Set<String>,
-    onMajorSelected: (Program) -> Unit,
-    onChatAboutMajor: (String) -> Unit
+    onMajorSelected: (Program) -> Unit
 ) {
     val matchingMajors = college.programs.filter { program ->
         program.types.contains("Major") && (interests.isEmpty() || program.area_of_interest.any { it in interests })
@@ -376,8 +307,7 @@ fun MajorResultsView(
         
         ProgramsList(
             programs = majorsToShow,
-            onProgramSelected = onMajorSelected,
-            onChatAboutProgram = onChatAboutMajor
+            onProgramSelected = onMajorSelected
         )
     }
 }
@@ -404,17 +334,6 @@ fun ExploreChoiceView(major: Program, onChoice: (ExplorationChoice) -> Unit) {
         )
         Spacer(modifier = Modifier.height(48.dp))
         
-        Button(
-            onClick = { onChoice(ExplorationChoice.AiAdvice) },
-            modifier = Modifier.fillMaxWidth().height(56.dp),
-            colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.tertiary)
-        ) {
-            Icon(Icons.Default.AutoAwesome, contentDescription = null)
-            Spacer(Modifier.width(8.dp))
-            Text("Ask AI for Advice")
-        }
-        Spacer(modifier = Modifier.height(16.dp))
-
         Button(
             onClick = { onChoice(ExplorationChoice.Minor) },
             modifier = Modifier.fillMaxWidth().height(56.dp)
@@ -443,8 +362,7 @@ fun ExploreChoiceView(major: Program, onChoice: (ExplorationChoice) -> Unit) {
 @Composable
 fun MinorResultsView(
     college: College,
-    interests: Set<String>,
-    onChatAboutMinor: (String) -> Unit
+    interests: Set<String>
 ) {
     val matchingMinors = college.programs.filter { program ->
         program.types.contains("Minor") && (interests.isEmpty() || program.area_of_interest.any { it in interests })
@@ -470,8 +388,7 @@ fun MinorResultsView(
         Spacer(modifier = Modifier.height(16.dp))
         
         ProgramsList(
-            programs = minorsToShow,
-            onChatAboutProgram = onChatAboutMinor
+            programs = minorsToShow
         )
     }
 }
@@ -479,17 +396,13 @@ fun MinorResultsView(
 @Composable
 fun ConcentrationResultsView(
     major: Program,
-    college: College,
-    onChatAboutConcentration: (String) -> Unit
+    college: College
 ) {
-    // Look for programs with type "Concentration" and parent_major == major.name
-    // OR names listed in major.concentrations
     val concentrations = college.programs.filter { program ->
         program.types.contains("Concentration") && 
         (program.parent_major == major.name || major.concentrations.contains(program.name))
     }.toMutableList()
 
-    // Add concentrations that might only be strings in the major's list
     major.concentrations.forEach { name ->
         if (concentrations.none { it.name == name }) {
             concentrations.add(Program(id = name, name = name, types = listOf("Concentration")))
@@ -515,8 +428,7 @@ fun ConcentrationResultsView(
             }
         } else {
             ProgramsList(
-                programs = concentrations.sortedBy { it.name },
-                onChatAboutProgram = onChatAboutConcentration
+                programs = concentrations.sortedBy { it.name }
             )
         }
     }
@@ -525,8 +437,7 @@ fun ConcentrationResultsView(
 @Composable
 fun ProgramsList(
     programs: List<Program>,
-    onProgramSelected: ((Program) -> Unit)? = null,
-    onChatAboutProgram: (String) -> Unit
+    onProgramSelected: ((Program) -> Unit)? = null
 ) {
     LazyColumn(verticalArrangement = Arrangement.spacedBy(12.dp)) {
         items(programs) { program ->
@@ -537,30 +448,17 @@ fun ProgramsList(
                 elevation = CardDefaults.cardElevation(defaultElevation = 2.dp)
             ) {
                 Column(modifier = Modifier.padding(16.dp)) {
-                    Row(
-                        modifier = Modifier.fillMaxWidth(),
-                        horizontalArrangement = Arrangement.SpaceBetween,
-                        verticalAlignment = Alignment.CenterVertically
-                    ) {
-                        Column(modifier = Modifier.weight(1f)) {
+                    Column(modifier = Modifier.fillMaxWidth()) {
+                        Text(
+                            text = program.name,
+                            style = MaterialTheme.typography.titleLarge,
+                            fontWeight = FontWeight.Bold
+                        )
+                        if (program.degree != null) {
                             Text(
-                                text = program.name,
-                                style = MaterialTheme.typography.titleLarge,
-                                fontWeight = FontWeight.Bold
-                            )
-                            if (program.degree != null) {
-                                Text(
-                                    text = program.degree,
-                                    style = MaterialTheme.typography.bodySmall,
-                                    color = MaterialTheme.colorScheme.secondary
-                                )
-                            }
-                        }
-                        IconButton(onClick = { onChatAboutProgram(program.name) }) {
-                            Icon(
-                                imageVector = Icons.AutoMirrored.Filled.Chat,
-                                contentDescription = "Ask AI about this program",
-                                tint = MaterialTheme.colorScheme.primary
+                                text = program.degree,
+                                style = MaterialTheme.typography.bodySmall,
+                                color = MaterialTheme.colorScheme.secondary
                             )
                         }
                     }

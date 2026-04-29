@@ -3,7 +3,6 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.kotlin.serialization)
-    alias(libs.plugins.secrets.gradle.plugin)
 }
 
 android {
@@ -44,16 +43,6 @@ android {
     }
 }
 
-secrets {
-    // Specify the file where your secrets are stored
-    propertiesFileName = "secrets.properties"
-
-    // Configure which keys should be ignored by the plugin by providing regular expressions.
-    // "sdk.dir" is ignored by default.
-    ignoreList.add("keyToIgnore") // Ignore the "keyToIgnore" property
-    ignoreList.add("sdk.*")       // Ignore all properties starting with "sdk"
-}
-
 dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
@@ -65,8 +54,8 @@ dependencies {
     implementation(libs.androidx.compose.material3)
     implementation(libs.androidx.compose.material.icons.extended)
     implementation(libs.androidx.navigation.compose)
-    implementation(libs.generativeai)
     implementation(libs.kotlinx.serialization.json)
+    implementation(libs.generativeai)
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.7")
 
     testImplementation(libs.junit)
